@@ -33,3 +33,8 @@ console.log(epsilonEqual(0.1 + 0.2, 0.3));
 console.log(Math.sign(-2));
 console.log(Math.sign(11));
 console.log(Math.sign(0));
+console.log("*****************************************");
+
+console.log(Math.fround(0));
+console.log(Math.fround(1));
+console.log(Math.fround(1.137));
