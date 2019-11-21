@@ -9,3 +9,10 @@ console.log('b', b);
 let [x, , y] = [9, 8, 7];
 console.log('x', x);
 console.log('y', y);
+console.log("------------------------")
+let [u, ...v] = [1, 2, 3, 4, 5, 6];
+console.log('u', u);
+console.log('v', v);
+let [m,,,, ...n] = [1, 2, 3, 4, 5, 6];
+console.log('m', m);
+console.log('n', n);
