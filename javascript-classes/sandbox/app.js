@@ -56,3 +56,6 @@ console.log('suv mixin', suv.madeIn());
 console.log('civic', cx5);
 // console.log('cx5 Stats:', cx5.carStats());
 // console.log(Car.totalDoors(cx5, civic));
+
+// TODO: Mixins:
+// https://javascript.info/mixins
