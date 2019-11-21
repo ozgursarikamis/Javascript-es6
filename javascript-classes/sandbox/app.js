@@ -15,15 +15,28 @@ class Car {
         return doors1 + doors2;
     }
 }
-sayHi();
-const cx5 = new Car(5, 'v6', 'grey');
-const civic = new Car(3, 'v4', 'blue');
 
-console.log('cx5', cx5);
-console.log('cx5 Stats:', cx5.carStats());
-console.log(Car.totalDoors(cx5, civic));
-function sayHi() {
-    return console.log("This function can be called anywhere");
+class SUV extends Car {
+    constructor(doors, engine, color,    brand, carStats) { // carStats overrided
+        super(doors, engine, color, brand, carStats);
+        this.brand = brand;
+        this.wheels = 4;
+        this.ac = true;
+    }
+
+    myBrand(){
+        return console.log(`This SUV is a ${this.brand}`)
+    }
 }
 
-sayHi();
+
+const cx5 = new Car(5, 'v6', 'grey');
+const civic = new SUV(3, 'v4', 'blue');
+
+const suv = new SUV(5, 'v8', 'black', 'Volvo');
+console.log('suv', suv);
+console.log('cx5', cx5);
+console.log(suv.myBrand());
+console.log('civic', cx5);
+// console.log('cx5 Stats:', cx5.carStats());
+// console.log(Car.totalDoors(cx5, civic));
