@@ -1,6 +1,6 @@
-const promises = new Promise((resolve, reject) => {
+const promise = new Promise((resolve, reject) => {
     var request = new XMLHttpRequest();
-    var url = "https://jsonplaceholder.typicofdfdde.com/todos/1";
+    var url = "https://jsonplaceholder.typicode.com/todos/1";
 
     request.open("GET", url);
 
@@ -19,6 +19,9 @@ const promises = new Promise((resolve, reject) => {
     request.send();
 });
 
-promises.then(x => {
+promise.then(x => {
     console.log(JSON.parse(x));
 });
+
+// Creates a new resolved promise for the provided value.
+Promise.resolve(promise).then(x => console.log(JSON.parse(x)));
