@@ -8,3 +8,5 @@ Object.defineProperty(obj, s1, {
 
 obj[s2] = "";
 console.log(Object.getOwnPropertySymbols(obj));
+
+//TODO: Symbols detailed on MDN
