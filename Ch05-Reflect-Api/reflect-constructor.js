@@ -1,36 +1,17 @@
-//The static Reflect.construct() method acts like the new operator, 
-// but as a function.
-
-function constructor1(a, b) {
-    this.a = a;
-    this.b = b;
-
-    this.f = function () {
-        return this.a + this.b + this.c;
-    }
+function OneClass() {
+    this.name = "one";
 }
 
-function constructor2() { }
-constructor2.prototype.c = 100;
+function OtherClass() {
+    this.name = "other";
+}
+var args = {};
+// calling this:
+var obj1 = Reflect.construct(OneClass, args, OtherClass);
 
-var myObject = Reflect.construct(constructor1, [1, 2], constructor2);
-console.log(myObject.f());
+// has the same result as this:
+var obj2 = Object.create(OtherClass.prototype);
+OneClass.apply(obj2, args);
 
-// 
-// class constructor1 {
-//     constructor(a, b) {
-//         this.a = a;
-//         this.b = b;
-//         this.f = function () {
-//             return this.a + this.b + this.c;
-//         };
-//     }
-// }
-
-// class constructor2 {
-//     constructor() { }
-// }
-// constructor2.prototype.c = 100;
-
-// var myObject = Reflect.construct(constructor1, [1, 2], constructor2);
-// console.log(myObject.f());
+console.log(obj1.name);
+console.log(obj2.name);
