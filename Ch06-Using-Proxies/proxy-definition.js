@@ -36,6 +36,24 @@ let p = new Proxy(dictionary, {
     }
 });
 
-console.log(dictionary["Hello"]);
-console.log(dictionary["Welcome"]);
-console.log(p["Welcome"]);
+// console.log(dictionary["Hello"]);
+// console.log(dictionary["Welcome"]);
+// console.log(p["Welcome"]);
+
+let nums = [];
+
+nums = new Proxy(nums, {
+    set(target, prop, val) {
+        if (typeof val === 'number') {
+            target[prop] = val;
+            return true;
+        } else {
+            return false;
+        }
+    }
+});
+
+nums.push(1);
+nums.push(2);
+nums.push("test");
+console.log(nums);
