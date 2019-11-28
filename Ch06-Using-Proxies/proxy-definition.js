@@ -46,6 +46,9 @@ nums = new Proxy(nums, {
     set(target, prop, val) {
         if (typeof val === 'number') {
             target[prop] = val;
+            // For set, it must return true for a successful write.
+            // If we forget to do it or return any falsy value, 
+            // the operation triggers TypeError.
             return true;
         } else {
             return false;
