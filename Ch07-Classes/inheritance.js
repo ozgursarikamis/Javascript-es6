@@ -1,12 +1,27 @@
 let animal = {
-    eats: true
+    eats: true,
+    walk() {
+        console.log("walking inside");
+    }
 };
 
 let rabbit = {
-    jumps: true
+    jumps: true,
+    __proto__: animal,
 };
 
-rabbit.__proto__ = animal;
-console.log('rabbit', rabbit);
-console.log('rabbit.eats', rabbit.eats);
-console.log('rabbit.jumps', rabbit.jumps);
+let longEar = {
+    earLength: 10,
+    __proto__: rabbit
+}
+console.log("--------------------------------------------------------------")
+var longEarWalks = longEar.walk;
+var rabbitWalks =  rabbit.walk();
+var longEarJumps = longEar.jumps;
+
+console.log("Trigger the method");
+longEarWalks();
+
+console.log("longEar.jumps \t : ", longEarJumps);
+console.log("--------------------------------------------------------------")
+
