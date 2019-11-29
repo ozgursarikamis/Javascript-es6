@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a1e77f9-ab9a-47a8-8dcc-e700e953a3ea" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/Javascript.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ch07-Classes/inheritance.js" beforeDir="false" afterPath="$PROJECT_DIR$/Ch07-Classes/inheritance.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,6 +19,8 @@
   </component>
   <component name="ProjectId" id="1UHv0607QmCYMCQuly2yVxliLZX" />
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="G:/Programs/android-sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -53,7 +59,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1575026108461</updated>
-      <workItem from="1575026109694" duration="142000" />
+      <workItem from="1575026109694" duration="859000" />
     </task>
     <servers />
   </component>

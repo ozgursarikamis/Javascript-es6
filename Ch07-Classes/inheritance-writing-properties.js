@@ -26,3 +26,10 @@ rabbit.sleep();
 console.log('rabbit', rabbit);
 console.log('animal', animal);
 console.log("--------------------------------------------------------------");
+
+for (const key in rabbit) {
+    if (rabbit.hasOwnProperty(key)) {
+        const element = rabbit[key];
+        console.log(element);
+    }
+}
