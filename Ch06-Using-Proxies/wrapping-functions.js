@@ -10,6 +10,10 @@ function delay(f, ms) {
      // return a wrapper that passes the call to f after the timeout
     return function () { //wrapper function
         setTimeout(() => {
+            console.log("----------------------");
+            console.log('this', this);
+            console.log('arguments', arguments);
+            console.log("----------------------");
             f.apply(this, arguments)
         }, ms);
     }
