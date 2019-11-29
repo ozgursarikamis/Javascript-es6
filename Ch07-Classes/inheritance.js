@@ -20,7 +20,7 @@ var rabbitWalks =  rabbit.walk();
 var longEarJumps = longEar.jumps;
 
 console.log("Trigger the method");
-longEarWalks();
+longEarWalks
 
 console.log("longEar.jumps \t : ", longEarJumps);
 console.log("--------------------------------------------------------------")
