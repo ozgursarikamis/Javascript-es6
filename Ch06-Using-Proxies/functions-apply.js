@@ -9,3 +9,14 @@ var person1 = {
 };
 const fullName = person.fullName.apply(person1);
 console.log(fullName);
+
+// Compared with the call() method:
+var p = {
+    fullName: function (city, country) {
+        return this.firstName + " " + this.lastName + " " + city + " " + country;
+    }
+}
+
+var p1 = { firstName: "John", lastName: "Doe" };
+var fName = p.fullName.call(p1, "Oslo", "Norway");
+console.log(fName);
