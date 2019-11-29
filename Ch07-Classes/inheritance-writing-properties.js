@@ -2,6 +2,12 @@ let animal = {
     eats: true,
     walk: function () {
         console.log("walking...");
+        if (!this.isSleeping) {
+            console.log('I am not sleeping.');
+        }
+    },
+    sleep: function () {
+        this.isSleeping = true;
     }
 }
 
@@ -15,3 +21,8 @@ rabbit.walk = function () {
 }
 
 rabbit.walk();
+console.log("--------------------------------------------------------------");
+rabbit.sleep();
+console.log('rabbit', rabbit);
+console.log('animal', animal);
+console.log("--------------------------------------------------------------");
