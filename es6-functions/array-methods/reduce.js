@@ -21,10 +21,3 @@ let result = arr.reduce((acc, item, index, arr) => {
 //     return sum + content;
 // }, 0);
 console.log('result', result);
-
-// reduceRight is the same with reduce, but starts from right:
-const _result = arr.reduceRight((acc, item, index, arr) => acc - item, 15);
-console.log('_result', _result);
-
-const __result = arr.reverse().reduce((acc, item) => acc - item, 15);
-console.log('__result', __result);
