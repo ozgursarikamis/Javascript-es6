@@ -1,5 +1,7 @@
 let arr = ["I", "study", "JavaScript"];
 // start from 1, delete 1 item:
+
+// splice returns the deleted elements.
 arr.splice(1, 1);
 
 // arr is affected:
